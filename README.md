@@ -1,10 +1,5 @@
 # Movie Recommendation Platform
 
----
-**Looking for the backend?**
-👉 [Movie-Reco-backend on GitHub](https://github.com/DipanshuOjha/Movie-Reco-backend)
----
-
 A modern, full-stack movie recommendation platform with smart AI-powered suggestions, user authentication, and a beautiful UI.
 
 ---
@@ -21,6 +16,10 @@ graph TD
   B -->|"Axios"| C
   C -->|"Prisma Client"| D
 ```
+
+---
+
+If you are looking for the backend code, check it out here: [Movie-Reco-backend on GitHub](https://github.com/DipanshuOjha/Movie-Reco-backend)
 
 ---
 
