@@ -18,13 +18,6 @@ const LandingPage: React.FC = () => {
       color: 'text-accent-600',
       bg: 'bg-accent-100',
     },
-    {
-      icon: Users,
-      title: 'Community',
-      description: 'Connect with fellow movie enthusiasts and see what others are watching.',
-      color: 'text-secondary-600',
-      bg: 'bg-secondary-100',
-    },
   ];
 
   const stats = [
@@ -156,23 +149,6 @@ const LandingPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-white/50 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary-100 to-accent-100 rounded-2xl mb-4">
-                  <stat.icon className="h-8 w-8 text-primary-600" />
-                </div>
-                <div className="text-3xl font-bold text-neutral-900 mb-2">{stat.number}</div>
-                <div className="text-neutral-600 font-medium">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Features Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -185,8 +161,7 @@ const LandingPage: React.FC = () => {
               Our platform combines powerful discovery tools with a vibrant community to help you find and enjoy the perfect movies.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {features.map((feature, index) => (
               <div
                 key={index}
@@ -225,7 +200,6 @@ const LandingPage: React.FC = () => {
               <ul className="space-y-2 text-neutral-400">
                 <li><Link to="/movies" className="hover:text-white transition-colors">Browse Movies</Link></li>
                 <li><Link to="/dashboard" className="hover:text-white transition-colors">Dashboard</Link></li>
-                <li><a href="#" className="hover:text-white transition-colors">Community</a></li>
               </ul>
             </div>
           </div>
